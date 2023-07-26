@@ -1,6 +1,5 @@
-import EmailDownloader from "./components/EmailDownloader/EmailDownloader.jsx";
+import Downloader from "./components/Downloader/Downloader.jsx";
 import CronDescriber from "./components/CronDescriber/CronDescriber.jsx";
-import JsonDownloader from "./components/JsonDownloder/JsonDownloader.jsx";
 import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import React, { useState } from "react";
@@ -30,16 +29,16 @@ function App() {
               </li>
               <li>
                 <Link to="/component2" onClick={handleLinkClick}>
-                cron describer
+                  cron describer
                 </Link>
               </li>
             </ul>
           </nav>
         ) : (
           <Routes>
-            <Route path="/component1" element={<EmailDownloader />} />
+            <Route path="/component1" element={<Downloader type={"email"} />} />
             <Route path="/component2" element={<CronDescriber />} />
-            <Route path="/component3" element={<JsonDownloader />} />
+            <Route path="/component3" element={<Downloader type={"file"} />} />
           </Routes>
         )}
       </div>
