@@ -1,0 +1,51 @@
+/* Reset some default styling */
+ul, li {
+  margin: 0;
+  padding: 0;
+  min-width: 200px;
+  list-style: none;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+          background-color: #007bff;
+        }
+      }
+    }
+  }
+}
+
+/* Style the switch button */
+.switch-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Testing",
+  "version": "1.0",
+  "description": "An extension to write and save files.",
+  "icons": {
+    "16": "icon 16x16.png",
+    "48": "icon 48x48.png",
+    "128": "icon 128x128.png"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["downloads", "activeTab","webRequest","storage"]
+}

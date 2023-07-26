@@ -1,0 +1,44 @@
+/* Add more stylish styling for the CronDescriber component */
+
+.cron-describer-container {
+    min-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      outline: none;
+      transition: border-color 0.2s ease;
+  
+      &::placeholder {
+        color: #999;
+      }
+  
+      &:focus {
+        border-color: #007bff;
+      }
+    }
+  
+    .cron-explanation {
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  
+      p {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+      }
+    }
+  }
+  
