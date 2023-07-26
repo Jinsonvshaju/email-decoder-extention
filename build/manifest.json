@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Testing",
+  "name": "Utility Extentions",
   "version": "1.0",
   "description": "An extension to write and save files.",
   "icons": {
