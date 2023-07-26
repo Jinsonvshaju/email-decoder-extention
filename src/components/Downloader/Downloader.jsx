@@ -46,7 +46,6 @@ const Downloader = (payload) => {
     } catch (error) {
       let errorMessage = error.message;
       setMessage("Invalid Json");
-      console.error(error);
       setPopup(errorMessage);
       return null;
     }
@@ -61,7 +60,6 @@ const Downloader = (payload) => {
     } catch (error) {
       let errorMessage = error.message;
       setMessage("Invalid Json");
-      console.error(error);
       setPopup(errorMessage);
       return null;
     }
@@ -100,7 +98,7 @@ const Downloader = (payload) => {
     <div className="notepad-container">
       <div className="heading-icon">
         <h2>Notepad</h2>
-        <DownloadFile content={content} type={"email"} />
+        <DownloadFile content={content} type={type} />
       </div>
       <div className="editor-container">
         <div className="line-numbers" id="line-number-div">
